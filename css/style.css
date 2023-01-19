@@ -1,0 +1,114 @@
+*{
+margin: 0;
+padding: 0;
+font-family: Josefin;
+}
+@font-face {
+    font-family: Josefin;
+    src: url(/Fonte/JosefinSans-VariableFont_wght.ttf);
+}
+body{background-color:#0E0E0E ;}
+
+.logo{
+    width: 300px;
+    height: 70px;
+    background-color: red;
+    background-image: url(/css/imagens/youtube-logo-font.webp);
+    background-size: cover;
+    background-position: left 50%;
+    border-radius: 70px;
+    margin-top: 20px;
+    margin-left: 10%;
+    display: inline-flex;
+}
+
+.pesquisa{
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 1.5%;
+    border-radius: 70px;
+    border-color: #a3a3a3;
+    border-width: 3px;
+    background-color: #0E0E0E;
+    font-family: Josefin;
+    width: 35%;
+    height: 70px;
+    padding-left: 20px;
+    font-size: 50px;
+    color: white;
+}
+
+.menu{
+    width: 350px;
+    height: 70px;
+    float: right;
+    margin-top: 20px;
+    margin-right: 10%;
+    background-color: #1c1c1c;
+    border-radius: 70px;
+}
+.menu>a{
+    float: right;
+    margin-right: 13%;
+    margin-top: 10px;
+}
+
+header{
+    height: 120px;
+}
+
+nav{
+margin-left: 10%;
+width: 1240px;
+height: 60px;
+}
+
+
+nav> div{
+    color: #0E0E0E;
+    font-family: Josefin;
+    font-size: 40px;
+    text-align: center;
+    background-color: #a3a3a3;
+    padding-top: 10px;
+    border-radius: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-width: 5px;
+    border-color: #a3a3a3;
+    display: inline;
+    margin-left: 32px;
+}
+
+nav>div:hover{cursor: pointer; background-color: #fe0000; color: white;}
+
+.conteudo{
+    width: 355px;
+    height: 250px;
+    display: inline-block;
+    margin-left: 80px;
+}
+
+.fotinha{
+    border-radius: 50px;
+    margin-left: 5px;
+    padding-top: 10px;
+}
+
+.conteudo>span{
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 5px;
+}
+
+article{
+    margin-left: 5%;
+    width: 90%;
+}
+
+.conteudo:hover{
+    cursor: pointer;
+    opacity: 0.6;
+}
