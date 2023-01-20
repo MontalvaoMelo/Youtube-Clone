@@ -1,27 +1,31 @@
 *{
 margin: 0;
 padding: 0;
-font-family: Josefin;
-}
-@font-face {
-    font-family: Josefin;
-    src: url(Fonte/JosefinSans-VariableFont_wght.ttf);
+font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 body{background-color:#0E0E0E ;}
 
+
+
+header{
+    height: 120px;
+}
 .logo{
     width: 300px;
     height: 70px;
     background-color: red;
-    background-image: url(css/imagens/youtube-logo-font.webp);
-    background-size: cover;
-    background-position: left 50%;
     border-radius: 70px;
     margin-top: 20px;
     margin-left: 10%;
     display: inline-flex;
-}
-
+    
+}.logo>h1{
+    text-decoration: dashed;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    padding-left: 30px;
+}/**logo**/
 .pesquisa{
     position: absolute;
     margin-top: 20px;
@@ -30,14 +34,16 @@ body{background-color:#0E0E0E ;}
     border-color: #a3a3a3;
     border-width: 3px;
     background-color: #0E0E0E;
-    font-family: Josefin;
     width: 35%;
     height: 70px;
     padding-left: 20px;
     font-size: 50px;
     color: white;
 }
-
+.pesquisa:focus{
+    background-color: #a3a3a3;
+    color: #0E0E0E;
+}/**search**/
 .menu{
     width: 350px;
     height: 70px;
@@ -53,17 +59,13 @@ body{background-color:#0E0E0E ;}
     margin-top: 10px;
 }
 
-header{
-    height: 120px;
-}
+
 
 nav{
 margin-left: 10%;
 width: 1240px;
 height: 60px;
 }
-
-
 nav> div{
     color: #0E0E0E;
     font-family: Josefin;
@@ -79,8 +81,10 @@ nav> div{
     display: inline;
     margin-left: 32px;
 }
-
 nav>div:hover{cursor: pointer; background-color: #fe0000; color: white;}
+/**categories**/
+
+
 
 .conteudo{
     width: 355px;
@@ -88,13 +92,11 @@ nav>div:hover{cursor: pointer; background-color: #fe0000; color: white;}
     display: inline-block;
     margin-left: 80px;
 }
-
 .fotinha{
     border-radius: 50px;
     margin-left: 5px;
     padding-top: 10px;
 }
-
 .conteudo>span{
     color: white;
     font-size: 30px;
@@ -102,13 +104,11 @@ nav>div:hover{cursor: pointer; background-color: #fe0000; color: white;}
     margin-top: 15px;
     margin-left: 5px;
 }
-
 article{
     margin-left: 5%;
     width: 90%;
 }
-
 .conteudo:hover{
     cursor: pointer;
     opacity: 0.6;
-}
+}/**videos**/

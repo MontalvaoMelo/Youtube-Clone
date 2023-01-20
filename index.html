@@ -6,15 +6,11 @@
     <meta name="viewport" content="width=>, initial-scale=1.0">
     <title>Youtube-Clone</title>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-
 </head>
 <body>
 
-    <header>
-        <a href="" ><div class="logo"></div></a>
+    <header><!--search and menu-->
+        <div class="logo"><h1>Youtube</h1></div>
         <input type="search" class="pesquisa" placeholder="Descubra Algo...">
     <div class="menu">
         <a href="" ><img src="css/imagens/menu.png" alt="" width="50px"></a>
@@ -23,7 +19,7 @@
     </div>
     </header>
     
-    <nav>
+    <nav><!--option-->
         <div>Games</div>
         <div>Mixes</div>
         <div>Ao vivo</div>
@@ -32,7 +28,7 @@
         <div>Animes</div>
     </nav>
     
-<article>
+<article><!--collum videos-->
     <main>
         <!--video-->
         <div class="conteudo">
@@ -53,7 +49,6 @@
             <span>LULA #295</span>
         </div>
     </main>  
-
     <main>
           <!--video-->
           <div class="conteudo">
@@ -74,42 +69,6 @@
             <span>Quantumania-Trailer</span>
         </div>
     </main>
-</article><script>
-	// <![CDATA[  <-- For SVG support
-	if ('WebSocket' in window) {
-		(function () {
-			function refreshCSS() {
-				var sheets = [].slice.call(document.getElementsByTagName("link"));
-				var head = document.getElementsByTagName("head")[0];
-				for (var i = 0; i < sheets.length; ++i) {
-					var elem = sheets[i];
-					var parent = elem.parentElement || head;
-					parent.removeChild(elem);
-					var rel = elem.rel;
-					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-					}
-					parent.appendChild(elem);
-				}
-			}
-			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-			var address = protocol + window.location.host + window.location.pathname + '/ws';
-			var socket = new WebSocket(address);
-			socket.onmessage = function (msg) {
-				if (msg.data == 'reload') window.location.reload();
-				else if (msg.data == 'refreshcss') refreshCSS();
-			};
-			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-				console.log('Live reload enabled.');
-				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-			}
-		})();
-	}
-	else {
-		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-	}
-	// ]]>
-</script>
+</article>
 </body>
 </html>
